@@ -365,3 +365,33 @@ nav {
 
  }
 }
+.hero4{
+width: 100%;
+margin-top: 100px;
+padding: 10px;
+height: 100vh;
+
+
+  .main{
+    display: flex;
+width: 100%;
+height: 100%;
+margin: 10px;
+.second{
+  
+  font-size: 25px;
+  font-family: rec_bold;
+  font-weight:lighter;
+  white-space: none;
+  padding-bottom: 10px;
+
+  width: 350px;
+}
+>div >img{
+  width: 95%;
+  height: 80vh;
+  
+  border-radius: 10px;
+}
+}
+}
