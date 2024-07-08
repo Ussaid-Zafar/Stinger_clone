@@ -4,6 +4,7 @@
 
   --gray: rgb(233, 233, 233);
 }
+
 @font-face {
   font-family: rec_reg;
   src: url("./assets/fonts/a2_rec_regular.ttf");
@@ -12,6 +13,11 @@
 @font-face {
   font-family: rec_bold;
   src: url("./assets/fonts/a2_record_black.ttf");
+}
+
+@font-face {
+  font-family: rec_bold1;
+  src: url("./assets/fonts/a2_rec_black.ttf");
 }
 * {
   margin: 0;
@@ -88,7 +94,7 @@ nav {
 
 .hero {
   width: 100%;
-  height: 200vh;
+  height: 150vh;
   padding: 0 12px;
   display: flex;
   justify-content: center;
@@ -123,14 +129,239 @@ nav {
         left: 0;
         padding: 10px;
 
-        .card{
-            width: 250px;
-            height: 300px;
-            background-color: white;
+        .card {
+          width: 400px;
+          position: relative;
+          height: 500px;
+          padding: 20px;
+          background-color: white;
+          >div{align-self: center;
+            /* width: 80%; */
+            margin: auto;
+            >img{
+              
+            
+              padding: 10px;
+              margin: 50px 0px;
+            margin-left: 40px;
+              width: 80%;
+            }
+          }
+        >div:first-child{
+          display: flex;
+          justify-content: space-between;
+          width: 100%;
+          > div >p:first-child{
+            font-weight: bold;
+            width: 100%;
+            font-size: 20px;
+          }
+        }
+        >div>button{
+          padding: 10px;
+          border: none;
+          /* border-radius: 25px; */
+          background-color: white;
+          position: absolute;
+          bottom: 12px;
+          right: 15px;
+
+        }
         }
       }
-
-
     }
   }
+}
+.hero1 {
+  width: 100%;
+  height: 80vh;
+  padding: 0 55px;
+  display: flex;
+  /* justify-content: center; */
+  .box1 {
+  }
+  .card >p{
+    font-family: rec_reg;
+    font-size: 20px;
+    font-weight: bolder;
+  }
+  h1 {
+    white-space: nowrap;
+    font-size: 3.6vw;
+    font-family: rec_bold;
+  }
+  .box2 {
+    height: 80vh;
+    display: flex;
+
+    width: 90vw;
+
+    .card {
+      margin: 0;
+      padding: 0;
+      height: 80%;
+      width: 100vw;
+     
+      img {
+      
+        height: 110%;
+        width: 23vw;
+        object-fit: cover;
+      }
+    }
+  }
+}
+.hero2{
+  width: 100%;
+  height: 90vh;
+  padding: 0 25px;
+  margin-top: 100px;
+  margin-bottom: 100px;
+  .cont1{
+    display: flex;
+    h1{
+      font-family: rec_bold;
+      font-size: 3.6vw;
+    }
+    #bt{
+      background-color: var(--black);
+      color: white;
+      
+    }
+    button{
+      padding: 0px 20px;
+      background-color: white;
+      border-radius: 5px;
+      font-weight: 500;
+      font-size: 20px;
+      margin: 0px 10px;
+    }
+  }
+  .cont2{
+    /* overflow: hidden; */
+    display: flex;
+    padding: 30px 0px;
+    /* margin: 20px; */
+    width: 18vw;
+    height: 70vh;
+    button{
+      background-color: #e82525;
+      width: 100%;
+      padding: 15px;
+      border: none;
+      margin-top: 15px;
+      border-radius: 5px;
+      font-size: 20px;
+      color: white;
+    }
+    .top{
+      display: flex;
+      justify-content: space-between;
+      div > p:first-child{
+        font-size: 1.3vw;
+        font-family: rec_black1;
+        font-weight: 800;
+      }
+    }
+    .cart{
+      border-top: 1px solid black;
+      border-right: 1px solid black;
+      padding: 10px;
+      
+      
+    }
+    div{
+      img{
+        margin: 50px 0px;
+        height: 35vh;
+        width: auto;
+      }
+      
+    }
+  }
+}
+.hero3{
+
+  width: 100%;
+  height: 170vh;
+ background: url("assets/images/section-4-background.webp");
+ background-position: center;
+ position: relative;
+ .main3{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  
+  .line{
+    width: 95%;
+    position: absolute;
+    top: 5%;
+    left: 2.5%;
+    height: 5vh;
+    background-color: white;
+  }
+  .maintext1{
+    position: absolute;
+    top:20% ;
+    left: 40%;
+    font-family: rec_bold;
+   
+    font-size: 160px;
+    color: white;
+  }
+  .maintext2{
+    position: absolute;
+    top:33% ;
+    left: 10%;
+    font-family: rec_bold;
+    font-size: 160px;
+    color: white;
+  }
+  .maintext3{
+    position: absolute;
+    top:45% ;
+    left: 30%;
+    font-family: rec_bold;
+    font-size: 160px;
+    color: white;
+
+  }
+  .side1{
+    position: absolute;
+    top:30% ;
+    right: 14%;
+    font-size: 12px;
+    font-family: rec_reg;
+    color: white;
+  }
+  .side2{
+    position: absolute;
+    top:40% ;
+    right: 2%;
+    font-size: 12px;
+    font-family: rec_reg;
+    color: white;
+    
+  }
+  .side3{
+    position: absolute;
+    top:70% ;
+    left: 7%;
+    font-size: 12px;
+    font-family: rec_reg;
+    color: white;
+    
+  }
+  .side4{
+    position: absolute;
+    bottom:10% ;
+    width: 300px;
+    left: 8%;
+    font-size: 18px;
+    font-family: rec_reg;
+    color: white;
+
+  }
+
+ }
 }
